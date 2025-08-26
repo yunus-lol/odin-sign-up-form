@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Macondo';
+  src: url('fonts/Macondo-Regular.woff2') format('woff2'),
+      url('fonts/Macondo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+img[src="background.jpg"] {
+  height: 100vh;
+}
