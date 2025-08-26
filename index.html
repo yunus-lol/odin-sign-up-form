@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Sign up form</title>
 </head>
 <body>
@@ -21,26 +22,36 @@
         <br><p>You <em>know</em> you want to.</p>
       </div>
       <form>
+        <legend>Let's do this!</legend>
         <div class="section">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name">
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name">
+          <input type="text" id="first-name" name="first-name" required>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" required>
         </div>
         <div class="section">
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name" required>
           <label for="phone-number">PHONE NUMBER</label>
           <input type="tel" id="phone-number" name="phone-number">
-        </div>
-        <div class="section">
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
           <label for="confirm">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm" name="confirm">
+          <input type="password" id="confirm" name="confirm" required>
         </div>
       </form>
+      <button type="submit">Create Account</button>
+      <p class="account">Already have an account? <a href="#">Log in</a></p>
+      <div class="message"></div>
     </div>
   </div>
+  <script>
+    const button = document.querySelector("button");
+    const output = document.querySelector(".message")
+
+    button.addEventListener("click", () => {
+      output.textContent = "the button don't work ya donut"
+    });
+  </script>
 </body>
 </html>

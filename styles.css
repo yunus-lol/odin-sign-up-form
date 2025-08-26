@@ -75,10 +75,78 @@ form {
 
 label, input {
   display: block;
-  width: 10vw;
+  width: 22vw;
+  margin: 0 10px;
+}
+
+label {
+  font-family: "Space Mono";
+  letter-spacing: 2px;
+  font-size: 2vh;
+  padding-top: 10px;
+}
+
+input {
+  height: 4vh;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+  padding-left: 3px;
 }
 
 legend {
   font-weight: bold;
   padding-bottom: 20px;
+  position: absolute;
+  top: 233px;
+  padding-left: 10px;
+}
+
+input:focus {
+  border: 1px solid rgb(149, 149, 255);
+  outline: none;
+  box-shadow: 1px 1px 1px rgb(211, 211, 255);
+}
+
+input[type="password"] {
+  border-color: red;
+}
+
+button {
+  background-color: #596D48;
+  border: none;
+  padding: 10px 45px;
+  margin: 20px 10vh;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #596d48eb;
+}
+
+button:hover {
+  background-color: #596d48ea;
+}
+
+.account {
+  padding-left: 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #596d48e4;
+  text-decoration: underline;
+}
+
+.message {
+  padding-left: 10vh;
+  margin: 20px 0;
+  font-weight: bold;
 }
