@@ -13,16 +13,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif, Arial, Helvetica;
   overflow: hidden;
+}
+
+.main {
+  display: flex;
 }
 
 .images {
   position: relative;
 }
 
-.main {
-  display: flex;
-  align-items: center;
+body {
+  background-color: rgba(244, 244, 244, 0.705);
 }
 
 img[src="odin-logo.png"] {
@@ -39,12 +43,42 @@ img[src="background.jpg"] {
   position: absolute;
   display: flex;
   justify-content: space-evenly;
-  top: 100px;
+  top: 120px;
   width: 30vw;
-  background-color: rgba(128, 128, 128, 0.4);
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 15px;
 }
 
 .odin {
   font-family: "Macondo";
   font-size: 80px;
+}
+
+.form-section {
+  width: 70vw;
+}
+
+.heading {
+  padding: 15vh 10vh;
+  padding-bottom: 40px;
+  font-weight: 600;
+}
+
+form {
+  box-shadow: 0 5px 10px rgb(186, 186, 186);
+  width: 70vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+label, input {
+  display: block;
+  width: 10vw;
+}
+
+legend {
+  font-weight: bold;
+  padding-bottom: 20px;
 }
