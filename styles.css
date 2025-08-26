@@ -64,8 +64,8 @@ img[src="background.jpg"] {
   font-weight: 600;
 }
 
-form {
-  box-shadow: 0 5px 10px rgb(186, 186, 186);
+.form {
+  box-shadow: 2px 5px 10px rgb(186, 186, 186);
   width: 70vw;
   padding: 50px;
   display: flex;

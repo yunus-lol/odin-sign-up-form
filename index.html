@@ -22,26 +22,28 @@
         <br><p>You <em>know</em> you want to.</p>
       </div>
       <form>
-        <legend>Let's do this!</legend>
-        <div class="section">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name" required>
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email" required>
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password" required>
+        <div class="form">
+          <legend>Let's do this!</legend>
+          <div class="section">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="section">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" name="phone-number">
+            <label for="confirm">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm" name="confirm" required>
+          </div>
         </div>
-        <div class="section">
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name" required>
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" id="phone-number" name="phone-number">
-          <label for="confirm">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm" name="confirm" required>
-        </div>
+        <button type="submit">Create Account</button>
+        <p class="account">Already have an account? <a href="#">Log in</a></p>
       </form>
-      <button type="submit">Create Account</button>
-      <p class="account">Already have an account? <a href="#">Log in</a></p>
       <div class="message"></div>
     </div>
   </div>
